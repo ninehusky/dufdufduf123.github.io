@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(73,73,73);
+	margin: 4%;
 }
 
 @keyframes fadein{
@@ -11,6 +12,10 @@ body {
 	to{opacity: 1;}
 }
 
+@mixin text{
+	font-family: "Arial", sans-serif;
+	color: white;
+}
 
 h1 {
 	font-family: "Arial", sans-serif;
@@ -20,11 +25,20 @@ h1 {
 	animation-fill-mode: both;
 }
 
+.math{
+	text-align: center;
+	background-color: rgb(66,66,66);
+	color:white;
+	animation: fadein 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+}
+
 p {
 	font-family: "Arial", sans-serif;
-	background-color: rgb(100,100,100);
-       	text-align: center;	
 	color: white;
+	background-color: rgb(100,100,100);
+       	text-align: left;	
 	animation: fadein 1s;
 	animation-delay: 1s;
 	animation-fill-mode: both;
@@ -40,7 +54,7 @@ img {
 }
 
 a:link{
-	color: rgb(112,66,67);
+	color: rgb(172,132,172);
 }
 
 a:visited{
