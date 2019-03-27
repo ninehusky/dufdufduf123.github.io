@@ -3,6 +3,42 @@ body {
 	margin: 4%;
 }
 
+a{
+	color: white;
+}
+
+ul{
+	z-index:1;
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	width: 20%;
+  	background-color: rgb(66,66,66);
+  	height: 87.5%; /* Full height */
+ 	position: fixed; /* Make it stick, even on scroll */
+ 	overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+li{
+	text-align:center;
+	font-family: "Arial", sans-serif;
+	color: white;
+	font-size: 150%;
+}
+
+li a{
+	display: block;
+	color: white;
+}
+
+li a.active{
+	background-color:rgb(90,90,90);
+	color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: rgb(73,73,73);
+}
+
 @keyframes fadein{
 	from{opacity: 0;}
 	to{opacity: 1;}
@@ -12,12 +48,8 @@ body {
 	to{opacity: 1;}
 }
 
-@mixin text{
-	font-family: "Arial", sans-serif;
-	color: white;
-}
-
 h1 {
+	margin-left:25%;
 	font-family: "Arial", sans-serif;
 	color: white;
 	text-align: center;
@@ -26,18 +58,20 @@ h1 {
 }
 
 .math{
+	margin-left:25%;
 	text-align: center;
 	background-color: rgb(66,66,66);
 	color:white;
 	animation: fadein 1s;
-	animation-delay: 1.5s;
+	animation-delay: 1.2s;
 	animation-fill-mode: both;
 }
 
 p {
+	margin-left:25%;
 	font-family: "Arial", sans-serif;
 	color: white;
-	background-color: rgb(100,100,100);
+	background-color: rgb(90,90,90);
        	text-align: left;	
 	animation: fadein 1s;
 	animation-delay: 1s;
@@ -45,22 +79,10 @@ p {
 }
 
 img {
+	margin-left:25%;
 	animation: fadein 1s;
 	animation-delay: 2s;
 	animation-fill-mode: both;
-	max-width: 100%;
+	max-width: 75%;
 	max-height: 100vh;
-	margin: auto;
 }
-
-a:link{
-	color: rgb(172,132,172);
-}
-
-a:visited{
-	color: rgb(167,136,167);
-}
-
-a:hover{}
-
-a:active{}
