@@ -49,7 +49,6 @@ li a:hover:not(.active) {
 }
 
 h1 {
-	margin-left:25%;
 	font-family: "Arial", sans-serif;
 	color: white;
 	text-align: center;
@@ -58,6 +57,7 @@ h1 {
 }
 
 .math{
+	font-family: monospace;
 	margin-left:25%;
 	text-align: center;
 	background-color: rgb(66,66,66);

@@ -45,13 +45,22 @@
 
 			Let's look at the Collatz trajectories for the initial values $n=\{28,29,30\}$. 
 		</p>
-		<div class="math", text-align: right>
-	$28\rightarrow 14 \rightarrow 7 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 17 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$
+		<div class="math">
+			$\begin{align}
+	28\rightarrow 14 \rightarrow 7 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 17 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 &\rightarrow 1\\
 
-	$29 \rightarrow 88 \rightarrow 44 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$
+	29 \rightarrow 88 \rightarrow 44 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 &\rightarrow 1\\
 
-	$30 \rightarrow 15 \rightarrow 46 \rightarrow 23 \rightarrow 70 \rightarrow 35 \rightarrow 106 \rightarrow 53 \rightarrow 160 \rightarrow 80 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$
+	30 \rightarrow 15 \rightarrow 46 \rightarrow 23 \rightarrow 70 \rightarrow 35 \rightarrow 106 \rightarrow 53 \rightarrow 160 \rightarrow 80 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 &\rightarrow 1\\
+			\end{align}$
 		</div>
+		<p>I remember this popping out to me at the time. It made sense that if multiple trajectories reached the same value they would continue to be the same, but reaching the same value at the same time? At the time, however, I just assumed it was a coincidence and I went back to being a good student and paying attention.
+		<p>The following summer, I ended up being bored enough that I decided to revisit this. I had assumed that the pattern in the sequence was just a coincidence but was not fully convinced, so I ended up revisiting it using a spreadsheet. I found out that similar patterns where multiple consecutive initial values went to 1 in the same number of iterations existed with surprising frequency. I couldn't really think of a way to visualize these, and I didn't feel like crunching the numbers to get a better feel for them, so I just messed around with larger numbers until I got bored with the entire buisiness and did something else.
+		</p>
+		<p> Fast-forward to about half a year later, and I was taking a numerical methods class using MATLAB. As soon as I used MATLAB's <tt>plot()</tt> for the first time, I was reminded of the Collatz stuff I had done earlier and decided to try messing around with it again.
+		</p> 
+
+
 
 		<img src="img/second200.png" alt="wack stuff">
 		<img src="img/first10000.png" alt="really wack">
