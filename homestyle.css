@@ -18,6 +18,7 @@ ul{
  	position: fixed; /* Make it stick, even on scroll */
  	overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
+
 li{
 	text-align:center;
 	font-family: "Arial", sans-serif;
@@ -56,7 +57,17 @@ h1 {
 	animation-fill-mode: both;
 }
 
+h2 {
+	font-family: "Arial", sans-serif;
+	color: white;
+	margin-left:25%;
+	text-align:left;
+	animation: fadein 1s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
 .math{
+	padding:1%;
 	font-family: monospace;
 	margin-left:25%;
 	text-align: center;
@@ -66,8 +77,8 @@ h1 {
 	animation-delay: 1.2s;
 	animation-fill-mode: both;
 }
-
 p {
+	padding:1%;
 	margin-left:25%;
 	font-family: "Arial", sans-serif;
 	color: white;
