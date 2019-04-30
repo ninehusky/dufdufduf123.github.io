@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../homestyle.css">
+		<link rel="stylesheet" href="../../Home/homestyle.css">
 
 			<script type="text/x-mathjax-config">
 				MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -26,7 +26,7 @@
 
 			<ul>
 				<li></br></li>
-			<li><a href="../index.html">Home</a></li>
+			<li><a href="../../Home/homepage.html">Home</a></li>
 			<li><a href="../math.html">Math</a></li>
 		</ul>
 	</head>
@@ -120,5 +120,20 @@ I didn't know how many initial values I wanted to look at, so I wrote a MATLAB s
 			And just to make sure that these go to 1, here's the graphs of both of them: 
 		</p>
 
+		<img src="img/62_63paths.png"></img>
+		<p text-align:"center">
+			(Note that the points appearing the same are examples of the point being one off from one another, not them being at the same value)
+		</br></br>
+			This pattern seems to happen frequently in the first few hundred values, but it would be nice to have some intuition for why this happens. While looking for some analytic reason why this happened, I noticed that all the sequences that I looked at start with an even number. It wasn't immediately clear why this was so, but I wanted to have confirmation before I tried building upon this. I wrote a script to go through the array of trajectories and give me those that are consecutive and have the same trajectory length. After this, I immediately found a counterexample with n = 49. 
+		</p>
+		<div class="math">
+			$
+			\begin{align}
+			49 \rightarrow 148 \rightarrow 74 \rightarrow \phantom{0}37 \rightarrow 112 \rightarrow 56 \rightarrow 28 \rightarrow 14 \rightarrow \phantom{0}7 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 17 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20\rightarrow10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1\\
+			50 \rightarrow \phantom{0}25 \rightarrow 76 \rightarrow \phantom{0}38 \rightarrow\phantom{0} 19 \rightarrow 58 \rightarrow 29 \rightarrow 88 \rightarrow 44 \rightarrow 22 \rightarrow 11 \rightarrow 34\rightarrow17 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1\\
+			51 \rightarrow 154 \rightarrow 77 \rightarrow232 \rightarrow 116 \rightarrow58 \rightarrow 29 \rightarrow 88 \rightarrow 44 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 17 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1\\
+			\end{align}
+			$
+		</div>
 	</body>
 </html>
